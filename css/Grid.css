@@ -1,0 +1,25 @@
+/* Grid 
+
+Es un sistema de maquetación más poderoso que Flexbox en un sistema 2D. Flexbox trabaja en una sola dirección.
+
+Grid permite trabajar hacia la derecha y hacia abajo.
+*/
+
+/* Propiedad bligatoria para grids: */
+.grid {
+    display: grid;
+/* DIbujar columnas de la cuadrícula  */
+    grid-template-columns: 1fr 1fr;
+    /* Unidad de medida solo para Grids - fracción */
+/* Dibujar las filas */
+    grid-template-rows: 200px 200px 200px;
+
+    grid-template-areas: 
+        ""
+        ""
+        "";
+    gap: 1rem /* para separar las áreas */
+    }
+
+
+

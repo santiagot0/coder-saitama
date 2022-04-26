@@ -1,0 +1,358 @@
+* {
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {background-color: hsla(0, 0%, 87%, 1)}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #ecc226;
+    display: flex;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+header ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    padding-right: 5%;
+}
+
+header ul .link {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    justify-self: center;
+    padding-top: 40px;
+}
+
+/* Menú hamburguesa */
+#bars:target {
+   
+}
+
+/* Animación del menú */
+
+/* Termina el menú*/
+
+article {
+    background-color: hsla(0, 0%, 87%, 0.549);
+    height: 800px;
+    display: flex;
+}
+
+article #left {
+    /* Estilo para la parte izquierda */
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+}
+
+article #left h1,
+.cocina,
+h3 {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.bienvenidos {
+    border-style: solid;
+    border-radius: 5px;
+    margin-top: 30px;
+    color: white;
+    background-color: hsla(0, 3%, 7%, 0.823);
+}
+
+article #right {
+    /* Estilo para la parte derecha */
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 75%;
+    font-size: 26px;
+    padding: 32px;
+}
+
+#parrafo {
+    padding: 15%;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+section {
+    list-style: none;
+    height: 40px;
+    text-decoration: none;
+}
+
+section div ul {
+    background-color: #ecc226;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section div ul a {
+    color: black;
+    text-decoration: none;
+}
+
+div .guante {
+    object-fit: contain;
+}
+
+/*Sección NOSOTROS*/
+
+.nosotros {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+}
+
+.nosotros h3 {
+    text-align: center;
+    padding: 3%;
+    height: 34%;
+    justify-content: center;
+    border-style: groove;
+    background-color: #ffffff;
+}
+
+/* Sección NUESTROS TRAGOS */
+
+table {
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    margin: 4%;
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: #ffffff;
+}
+
+table tr td {
+    padding: 20px;
+}
+
+.tragos {
+    background-image: url(../imagenes/guante.png);
+}
+
+/*Sección CONTACTO */
+
+.formulario {
+    display: flex;
+    padding: 2%;
+    justify-content: center;
+}
+
+.formulario h2 {
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+form {
+    padding: 2%;
+}
+
+.reservas {
+    border-style: solid;
+    border-radius: 10px;
+}
+
+form textarea {
+    border-style: none;
+}
+
+/* Sección DONDE ENCONTRARNOS */
+
+.donde__estamos {
+    background-color: white;
+}
+
+
+.ubicacion {
+    background-color: hsla(0, 0%, 87%, 0.549);
+    flex-flow: row nowrap;
+}
+
+.ubicacion #jrpass {
+    display: flex;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+    margin-left: 50px;
+    text-align: center;
+    margin-top: 100px;
+    flex-direction: column;
+    justify-content: center;
+    font-style: italic;
+}
+
+/* Termina la parte principal y empieza el footer*/
+
+footer {
+    display: flex;
+    bottom: 100%;
+    width: 100%;
+    height: 80px;
+    background-color: bisque;
+    padding-top: 50px;
+    padding-left: 25px;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-end;
+}
+
+footer h5 {
+    padding-bottom: 30px;
+}
+
+footer .cara {
+    padding-top: 10px;
+    height: 100px;
+}
+
+
+/* --------- Vista iPad ---------- */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        width: 100%;
+        height: 100px;
+        display: flex;
+    }
+    
+/*     #sidebar ul .link {
+        position: fixed;
+        background-color: gray;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 75%;
+        max-width: 300px;
+        flex-direction: column;
+    } */
+
+    article {
+        flex-direction: column;
+    }
+
+    a i { /* Ícono - Menú desplegable */
+        display: flex;
+        margin-left: 600px;
+        margin-bottom: 30px;
+        font-size: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bienvenidos, .lugar, .guante {
+        justify-content: center;
+        text-align: center;
+        object-position: 50%;
+    }
+
+    section div ul {
+        background-color: #ecc226;
+        margin-top: 90%;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul {
+        height: 20px;
+    }
+
+    article #right {
+        transform: translate(100px, -30px);
+    }
+}
+
+/* Estilos para las versiones mobile */
+
+@media screen and (max-width: 375px) {
+    
+    article {
+        flex-direction: column;
+    }
+/* 
+    #sidebar ul .link {
+        position: fixed;
+        background-color: gray;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 75%;
+        max-width: 600px;
+        flex-direction: column;
+    }
+ */
+    #sidebar .nav__lista {
+        flex-direction: column;
+    }
+
+    /* Ícono - Menú desplegable */ 
+    #bars {
+        position: absolute;
+        font-size: 36px;
+        top: 2rem;
+        right: 2rem;
+        color: #181616;
+        text-decoration: none;
+    }
+    
+    #bars:target {
+        display: block;
+    }
+
+    article #right {
+        transform:none;
+        transform: translateY(500px);
+        position:absolute;
+        justify-content: center;
+        padding-top: 3rem;
+        width: 100%;
+    }
+
+    #parrafo {
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        font-size: 20px;
+    }
+
+    
+    .bienvenidos, .lugar, .guante {
+        justify-content: center;
+        text-align: center;
+        object-position: 50%;
+    }
+
+    section div  {
+        display: none;
+    }
+        
+    footer {
+        margin-top: 100%;
+    }
+}
