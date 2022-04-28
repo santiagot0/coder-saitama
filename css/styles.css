@@ -7,6 +7,7 @@
 
 header {
     background-color: rgb(249, 208, 72);
+    box-shadow: 10px 10px;
 }
 
 header div .logo {
@@ -23,6 +24,8 @@ header ul {
     justify-content: space-between;
     align-items: center;
 }
+
+/* Fin del header */
 
 body {
     background-color: rgb(246, 242, 242)
@@ -55,11 +58,22 @@ h3 {
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
+    transition: transform .2s;
+}
+
+.cocina:hover {
+    transform: scale(1.1);
+    overflow: hidden;
 }
 
 .guante {
     justify-self: center;
     padding-left: 20vh;
+    transition: 0.5seg;
+}
+
+.guante:hover {
+    transform: rotate(20deg);
 }
 
 article #right {
@@ -117,9 +131,15 @@ footer {
 }
 
 footer h5 {transform: translateY(-30px);}
+
 .cara {
     height: 100px;
     width: 100px;
+    transition: transform 1s;
+}
+
+.cara:hover {
+    transform: rotate(360deg);
 }
 
 /* --- Sección Nosotros --- */
@@ -248,7 +268,7 @@ form {
     font-style: italic;
 }
 
-/* --------- iPad ------------ */
+/* -------------------- iPad ------------------------ */
 @media screen and (max-width: 768px) {
     main article {
         display: flex;
@@ -286,8 +306,9 @@ form {
     display: none;
    }
 
-    #bars {
-        display: block;
+    header nav ul #bars {
+        position: absolute;
+        display: inline-block;
         font-size: 36px;
         color: rgb(213, 57, 0);
         transform: translate(80vw, -50px);
@@ -327,7 +348,7 @@ form {
 
 /* ----------------------------- */
 
-/* --- Mobile --- */
+/* ------------------ Mobile -------------------- */
 @media screen and (max-width: 375px) {
     footer {
         transform: translateY(600px);
