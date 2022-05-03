@@ -47,9 +47,7 @@ main article {
 }
 
 /* Estilo para la parte izzquierda del index */
-article #left h1,
-.cocina,
-h3 {
+article #left h1, .cocina, h3 {
     display: flex;
     justify-content: center;
     padding-top: 20px;
@@ -57,10 +55,24 @@ h3 {
     width: 100%;
 }
 
+.cocina {
+    transition: .5s;
+}
+
+.cocina:hover {
+    transform: scale(1.1);
+}
+
 .guante {
     justify-self: center;
     padding-left: 20vh;
+    transition: .5s;
 }
+
+.guante:hover {
+    transform: rotate(20deg);
+}
+
 
 article #right {
     /* Estilo para la parte derecha */
@@ -74,8 +86,23 @@ article #right {
     margin: 30px;
 }
 
+
 #parrafo {
     font-style: italic;
+    animation-duration: 3s;
+    animation-name: slide-in;
+}
+
+@keyframes slide-in {
+    from {
+        margin-top: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
 }
 
 /* Menú de navegación inferior */
@@ -120,6 +147,11 @@ footer h5 {transform: translateY(-30px);}
 .cara {
     height: 100px;
     width: 100px;
+    transition: 1s;
+}
+
+.cara:hover {
+    transform: rotate(360deg);
 }
 
 /* --- Sección Nosotros --- */
@@ -147,6 +179,11 @@ footer h5 {transform: translateY(-30px);}
     height: 400px;
     width: 400px;
     transform: translateY(-30%);
+}
+
+.presentacion {
+    animation-duration: 3s;
+    animation-name: slide-in;
 }
 
 /* ------------------------ */
@@ -322,7 +359,12 @@ form {
     nav ul a {padding: 10%;}
 
     /* Fin sidebar */
+
+    footer {
+        margin-top: 100vh;
+    }
 }
+
 
 
 /* ----------------------------- */
