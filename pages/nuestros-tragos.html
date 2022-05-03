@@ -1,91 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saitama - Nuestros tragos</title>
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Saitama</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <!--    CSS    -->
+        <link rel="stylesheet" href="../css/styles.css">
+        <script src="../js/bootstrap.bundle.min.js"></script>
+      
+        <!-- fontawesome iconos -->
+        <script src="https://kit.fontawesome.com/1f1377765f.js" crossorigin="anonymous"></script>
+    </head>
 
 <body>
-    <header class="menu" id="header"><!-- Links a las otras páginas -->
-        
-        <img class="logo" src="../imagenes/loguito.png" alt="logo" width="100px" height="100px">
-        <a class="header__open" href="#sidebar">
-            <i class="fas fa-bars" id="bars"></i> <!-- Menú desplegable -->
-        </a>
-
-        <nav class="nav" id="sidebar">
-            <ul class="nav__lista">
-                <a class="link" href="../index.html">Inicio</a>
-                <a class="link" href="../pages/nosotros.html">Nosotros</a>
-                <a class="link" href="../pages/nuestros-tragos.html">Nuestros tragos</a>
-                <a class="link" href="../pages/contacto.html">Contacto</a>
-                <a class="link" href="../pages/donde-encontrarnos.html">Dónde encontrarnos</a>
-                <a class="link" href="#">Cerrar</a>
-            </ul>
+    <header class="container" id="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="col-2 navbar-brand" href="../index.html">
+                    <img id="brand" src="../imagenes/loguito.png" height="100px" width="100px" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="row collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav">
+                        <li class="col-3 nav-item">
+                            <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="col-3 nav-item">
+                            <a class="nav-link" href="../pages/nuestros-tragos.html">Nuestros tragos</a>
+                        </li>
+                        <li class="col-3 nav-item">
+                            <a class="nav-link" href="../pages/donde-encontrarnos.html">Dónde encontrarnos</a>
+                        </li>
+                        <li class="col-3 nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-
     </header>
 
     <article>
-        <table class="tragos" border="1" cellpadding="5" cellspacing="1">
-            <tr class="tabla">
-                <td class="tabla__trago1">Old Fashioned</td>
-                <td class="tabla__ingredientes1">
+        <table class="table table-striped table-bordered">
+            <tbody>
+              <tr>
+                <th scope="row">🥃</th>
+                <td class="col-4">Old Fashioned</td>
+                <td class="col-5">
                     <li>Whiskey</li>
-                    <li>Azúcar</li>
-                    <li>Angostura Bitter</li>
-                    <li>Cáscara de naranja</li>
-                    <li>Hielo</li>
+                        <li>Azúcar</li>
+                        <li>Angostura Bitter</li>
+                        <li>Cáscara de naranja</li>
                 </td>
-                 <td class="tabla__precio1">¥750</td>
-            </tr>
-            <tr>
-                <td>Negroni</td>
-                <td>
+                <td class="col-3">¥750</td>
+              </tr>
+              <tr>
+                <th scope="row">🥃</th>
+                <td class="col-4">Negroni</td>
+                <td class="col-5">
                     <li>Hielo</li>
                     <li>Ginebra</li>
                     <li>Vermouth dulce</li>
                     <li>Rodaja de naranja</li>
                     <li>Campari</li>
                 </td>
-                <td>¥800</td>
-            </tr>
-            <tr>
-                <td>Margarita</td>
-                <td>
+                <td class="col-3">¥800</td>
+              </tr>
+              <tr>
+                <th scope="row">🍹</th>
+                <td class="col-4">Margarita</td>
+                <td class="col-5">
                     <li>Tequila</li>
                     <li>Licor de naranja</li>
                     <li>Jugo de limón</li>
                     <li>Azúcar</li>
                     <li>Hielo</li>
-                    </td>
-                <td>¥700</td>
-            </tr>
-            <tr>
-                <td>Agua de Valencia</td>
-                <td>
+                </td>
+                <td class="col-3">¥700</td>
+              </tr>
+              <tr>
+                <th scope="row">🍸</th>
+                <td class="col-4">Agua de Valencia</td>
+                <td class="col-5">
                     <li>Zumo de naranja</li>
                     <li>Ginebra</li>
                     <li>Vodka</li>
                     <li>Champagne</li>
                 </td>
-                <td>¥850</td>
-            </tr>
-            <tr>
-                <td>Sex on the beach</td>
-                <td>
+                <td class="col-3">¥850</td>
+              </tr>
+              <tr>
+                <th scope="row">🍹</th>
+                <td class="col-4">Sex on the beach</td>
+                <td class="col-5">
                     <li>Vodka</li>
                     <li>Licor de melocotón</li>
                     <li>Licor de frambuesa</li>
                     <li>Arándanos rojos</li>
                     <li>Zumo de naranja</li>
-                    </td>
-                <td>¥700</td>
-            </tr>
-            </table>    
+                </td>
+                <td class="col-3">¥700</td>
+              </tr>
+            </tbody>
+          </table>
     </article>
     <section>
         <div>
