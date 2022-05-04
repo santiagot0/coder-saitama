@@ -16,7 +16,7 @@
     </head>
 
 <body class="contacto">
-    <header class="container" id="header">
+    <header class="container-fluid s-0 e-0" id="header">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="col-2 navbar-brand" href="../index.html">
@@ -48,18 +48,34 @@
     <article class="formulario">
         <section>
             <h2>Escribinos para reservas</h2>
-            <form class="reservas" action="">
-                <div>Nombre y apellido: <input type="text"></div>
-                <div>e-mail: <input type="email" name="" id=""></div>
-                <div>¿Cómo nos conociste?: <select name="conociste" id="conociste"></div>
-                    <option value="Web">Por la web</option>
-                    <option value="amigo">Por un amigo</option>
-                    <option value="No">Llegué de casualidad</option>
-                    <option value="otro">Otra</option></select>
-                <div>¿Querés recibir notificaciones sobre nuestros eventos y promociones?: <input type="checkbox" name="neews" id=""></div>
+            <form class="form-group reservas" action="">
+                <div>
+                    <input type="text" class="form-control" placeholder="Nombre y apellido">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1"></label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Dirección de correo electrónico">
+                    <small id="emailHelp" class="form-text text-muted">No compartiremos tu dirección de correo electrrónico con nadie.</small>
+                  </div>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>¿Cómo nos conociste?</option>
+                    <option value="1">Por la web</option>
+                    <option value="2">Me contaron</option>
+                    <option value="3">Otr@ (dejanos un comentario)</option>
+                  </select>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                    <label class="form-check-label" for="flexCheckIndeterminate">
+                        ¿Querés recibir notificaciones sobre nuestros eventos y promociones?
+                    </label>
+                  </div>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Dejanos tus comentarios</label>
+                  </div>
             </form>
             <form action="">
-                <textarea name="comentarios" id="comentarios" cols="30" rows="10">Dejanos tus comentarios</textarea>
+               
             </form>
             <button type="reset">Limpiar formulario</button> 
             <button type="submit">Enviar formulario</button>
