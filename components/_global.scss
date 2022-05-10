@@ -159,29 +159,13 @@ footer {
 
 /* ------------------------ */
 /* --- Sección Nuestros tragos */
-.table {
-  background-image: url(../imagenes/guante.png);
-  border-color: black;
-}
 
 /* --------------------------- */
 /* --- Sección Contacto --- */
 
 /* -------------------------- */
 /* --- Sección Dónde encontrarnos --- */
-#map {
-  max-width: 100vw;
-}
 
-.ubicacion {
-  background-color: hsla(0deg, 0%, 87%, 0.549);
-  flex-flow: row nowrap;
-}
-
-.travel {
-  object-fit: fill;
-  transform: translateY(1rem);
-}
 
 /* --------- iPad ------------ */
 @media screen and (max-width: 768px) {
@@ -202,7 +186,7 @@ footer {
     max-width: 100vw;
   }
 
-  .nosotros h3 {
+  .article div h3 {
     font-size: auto;
   }
 
@@ -212,9 +196,9 @@ footer {
     justify-content: center;
   }
 
-  nav ul a {
+/*   nav ul a {
     padding: 10%;
-  }
+  } */
 
   /* Fin sidebar */
   footer {
