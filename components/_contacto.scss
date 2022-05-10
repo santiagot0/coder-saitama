@@ -1,0 +1,36 @@
+.contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+      .formulario {
+      height: 100vh;
+    }
+  
+  }
+  
+  .formulario {
+    display: flex;
+    padding: 2%;
+    justify-content: center;
+    
+      h2 {
+      display: flex;
+      padding-bottom: 20px;
+      justify-content: center;
+    }
+  }
+  
+  form {
+    padding: 2%;
+  }
+  
+  .reservas {
+    border-style: solid;
+    border-radius: 10px;
+  }
+
+  .btn-primary {
+    background-color: $bgColor;
+    color: $color;
+    margin-top: 10px;
+}
+  
