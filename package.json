@@ -20,8 +20,8 @@
   "dependencies": {
     "nodemon": "^2.0.16"
   },
-  "description": "",
   "devDependencies": {
     "node-sass": "^7.0.1"
-  }
+  },
+  "description": ""
 }
