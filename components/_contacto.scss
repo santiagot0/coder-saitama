@@ -28,9 +28,14 @@
     border-radius: 10px;
   }
 
+@mixin btn-style ($mt, $c, $bg) {
+  background-color: $bgColor;
+  color: $color;
+  margin-top: $mt;
+  
+}
+
   .btn-primary {
-    background-color: $bgColor;
-    color: $color;
-    margin-top: 10px;
+    @include btn-style(10px, $color, $bgColor);
 }
   
