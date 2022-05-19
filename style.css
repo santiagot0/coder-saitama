@@ -97,7 +97,7 @@ article #right {
 }
 /* Menú de navegación inferior */
 section div ul {
-  background-color: #ecc226;
+  background-color: rgb(249, 208, 72);
   height: 40px;
   padding: 0px 50px;
   display: flex;
@@ -122,7 +122,7 @@ footer {
   display: flex;
   bottom: 100%;
   width: 100%;
-  height: 80px;
+  height: 200px;
   background-color: bisque;
   padding-top: 50px;
   padding-left: 25px;
@@ -134,14 +134,23 @@ footer h5 {
   transform: translateY(-30px);
 }
 
+.derechos {
+  transform: translateY(-100px);
+}
+
+.sitemap {
+  list-style: none;
+  transform: translateY(-30px);
+}
+.sitemap__item {
+  color: black;
+  text-decoration: underline;
+}
+
 .cara {
   height: 100px;
   width: 100px;
-  transition: 1s;
-}
-
-.cara:hover {
-  transform: rotate(360deg);
+  transform: translateY(-80px);
 }
 
 /* --------- iPad ------------ */
@@ -179,12 +188,26 @@ footer h5 {
     flex-direction: column;
     justify-content: center;
   }
+
+  footer img {
+    display: none;
+  }
 }
 /* ----------------------------- */
 /* --- Mobile --- */
 @media screen and (max-width: 375px) {
+  footer {
+    height: 260px;
+  }
   footer h5 {
     transform: translateY(1px);
+  }
+  footer div {
+    transform: translateY(30px);
+  }
+
+  footer div ul li {
+    text-decoration: solid;
   }
 
   .nosotros .col-3 iframe {
@@ -248,7 +271,7 @@ form {
 }
 
 .btn-primary {
-  background-color: hwb(47 15% 7%);
+  background-color: rgb(249, 208, 72);
   color: black;
   margin-top: 10px;
 }
