@@ -4,36 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saitama - Bar de tragos</title>
-    <link rel="stylesheet" href="./css/styles.css">
-  
-    <!-- fontawesome iconos -->
+    <title>Saitama</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- --------- -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/1f1377765f.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="menu" id="header"><!-- Links a las otras páginas -->
-        
-        <img class="logo" src="./imagenes/loguito.png" alt="logo" width="100px" height="100px">
-        <a class="header__open" href="#sidebar">
-            <i class="fas fa-bars" id="bars"></i> <!-- Menú desplegable -->
-        </a>
-
-        <nav class="nav" id="sidebar">
-            <ul class="nav__lista">
-                <a class="link" href="./index.html">Inicio</a>
-                <a class="link" href="./pages/nosotros.html">Nosotros</a>
-                <a class="link" href="./pages/nuestros-tragos.html">Nuestros tragos</a>
-                <a class="link" href="./pages/contacto.html">Contacto</a>
-                <a class="link" href="./pages/donde-encontrarnos.html">Dónde encontrarnos</a>
-                <a class="link" href="#">Cerrar</a>
-            </ul>
+    <header class="container-fluid s-0 e-0" id="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="col-2 navbar-brand" href="./index.html">
+                    <img id="brand" src="./imagenes/loguito.png" height="100px" width="100px" alt="Inicio">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="row collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" id="inicio-navbar" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="col-3 nav-item">
+                            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="col-3 nav-item">
+                            <a class="nav-link" href="./pages/nuestros-tragos.html">Nuestros tragos</a>
+                        </li>
+                        <li class="col-3 nav-item">
+                            <a class="nav-link" href="./pages/donde-encontrarnos.html">Dónde encontrarnos</a>
+                        </li>
+                        <li class="col-3 nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-
     </header>
+    
 
     <main>
-        <article>
+        <article class="main_article">
             <div id="left"> <!-- Cuerpo principal del index -->
                 <h1 class="bienvenidos">BIENVENIDOS A SAITAMA BAR</h1>
                 <img class="cocina" src="./imagenes/cocina.jpeg" alt="">
@@ -47,7 +66,8 @@
         </article>
 
         <section>
-            <div><!-- Menú de la parte inferior -->
+            <!-- Menú de la parte inferior -->
+            <div>
                 <ul>
                     <a class="item" href="./index.html">Inicio</a>
                     <a class="item" href="./pages/nosotros.html">Nosotros</a>
@@ -59,9 +79,6 @@
 
     </main>
 
-    <footer>
-        <h5>Saitama Inc - Todos los derechos reservados</h5>
-        <img class="cara" src="./imagenes/logo-footer.png" alt="cara" height="80px" width="80px">
 
     <footer class="row m-0 p-0">
         <h5 class="col-4 derechos">Saitama Inc - Todos los derechos reservados</h5>
@@ -81,5 +98,6 @@
         <img class="col-3 cara" src="./imagenes/logo-footer.png" alt="cara" height="80px" width="80px">
     </footer>
 
+
 </body>
-</html>
+</html> 

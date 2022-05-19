@@ -313,6 +313,11 @@ form {
   border-radius: 10px;
 }
 
+article div {
+  height: 100%;
+  width: auto;
+}
+
 .table {
   background-image: url(../imagenes/guante.png);
   border-color: black;
